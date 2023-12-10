@@ -7,6 +7,7 @@ fun main() {
     val allHomeworks: Array<Double> = arrayOf(
         2.1,
         2.2,
+        2.3,
     )
 
     var lastModuleNumber: Int? = null
@@ -45,6 +46,7 @@ fun module2(homeworkNumber: Int) {
     when (homeworkNumber) {
         1 -> module2_homework1()
         2 -> module2_homework2()
+        3 -> module2_homework3()
     }
 }
 
@@ -59,5 +61,13 @@ fun module2_homework1() {
 fun module2_homework2() {
 
     for (n in 1..7) println("Значение переменной \"n\" равно $n")
+
+}
+
+fun module2_homework3() {
+
+        var x = 1
+
+        while (x <= 6) println("Значение переменной \"x\" равно ${x++}")
 
 }
