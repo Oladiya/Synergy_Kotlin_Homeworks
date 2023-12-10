@@ -4,6 +4,6 @@ fun main() {
 
     var x = 1
 
-    while (x <= 3) println("$x в квадрате будет: ${x * x++}")
+    while (x <= 3) println("$x в квадрате равно ${x * x++}")
 
 }
