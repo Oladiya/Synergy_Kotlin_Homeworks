@@ -6,6 +6,7 @@ fun main() {
 
     val allHomeworks: Array<Double> = arrayOf(
         2.1,
+        2.2,
     )
 
     var lastModuleNumber: Int? = null
@@ -42,14 +43,21 @@ fun callModule(moduleNumber: Int, homeworkNumber: Int) {
 
 fun module2(homeworkNumber: Int) {
     when (homeworkNumber) {
-        1 -> module2_Homework1()
+        1 -> module2_homework1()
+        2 -> module2_homework2()
     }
 }
 
-fun module2_Homework1() {
+fun module2_homework1() {
 
     var x = 1
 
     while (x <= 3) println("$x в квадрате равно ${x * x++}")
+
+}
+
+fun module2_homework2() {
+
+    for (n in 1..7) println("Значение переменной \"n\" равно $n")
 
 }
