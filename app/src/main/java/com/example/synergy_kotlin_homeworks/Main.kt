@@ -8,6 +8,7 @@ fun main() {
         2.1,
         2.2,
         2.3,
+        2.4,
     )
 
     var lastModuleNumber: Int? = null
@@ -47,6 +48,7 @@ fun module2(homeworkNumber: Int) {
         1 -> module2_homework1()
         2 -> module2_homework2()
         3 -> module2_homework3()
+        4 -> module2_homework4()
     }
 }
 
@@ -69,5 +71,13 @@ fun module2_homework3() {
         var x = 1
 
         while (x <= 6) println("Значение переменной \"x\" равно ${x++}")
+
+}
+
+fun module2_homework4(){
+
+    var y = 5
+
+    while (y >= 2) println("Значение переменной \"y\" равно ${y--}")
 
 }
