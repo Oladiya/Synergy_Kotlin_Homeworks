@@ -9,6 +9,7 @@ fun main() {
         2.2,
         2.3,
         2.4,
+        2.5,
     )
 
     var lastModuleNumber: Int? = null
@@ -49,6 +50,7 @@ fun module2(homeworkNumber: Int) {
         2 -> module2_homework2()
         3 -> module2_homework3()
         4 -> module2_homework4()
+        5 -> module2_homework5()
     }
 }
 
@@ -79,5 +81,13 @@ fun module2_homework4(){
     var y = 5
 
     while (y >= 2) println("Значение переменной \"y\" равно ${y--}")
+
+}
+
+fun module2_homework5() {
+
+    var x = 1
+
+    while (x <= 3) println("$x в квадрате равно ${x * x++}")
 
 }
