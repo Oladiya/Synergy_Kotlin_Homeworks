@@ -1,5 +1,6 @@
 package com.example.synergy_kotlin_homeworks
 
+import com.example.synergy_kotlin_homeworks.module2.homework1.Bot
 import java.math.RoundingMode
 
 fun main() {
@@ -10,6 +11,7 @@ fun main() {
         2.3,
         2.4,
         2.5,
+        3.1,
     )
 
     var lastModuleNumber: Int? = null
@@ -41,6 +43,7 @@ fun getHomeworkNumber(double: Double): Int {
 fun callModule(moduleNumber: Int, homeworkNumber: Int) {
     when (moduleNumber) {
         2 -> module2(homeworkNumber)
+        3 -> module3(homeworkNumber)
     }
 }
 
@@ -51,6 +54,12 @@ fun module2(homeworkNumber: Int) {
         3 -> module2_homework3()
         4 -> module2_homework4()
         5 -> module2_homework5()
+    }
+}
+
+fun module3(homeworkNumber: Int) {
+    when (homeworkNumber) {
+        1 -> module3_homework1()
     }
 }
 
@@ -70,13 +79,13 @@ fun module2_homework2() {
 
 fun module2_homework3() {
 
-        var x = 1
+    var x = 1
 
-        while (x <= 6) println("Значение переменной \"x\" равно ${x++}")
+    while (x <= 6) println("Значение переменной \"x\" равно ${x++}")
 
 }
 
-fun module2_homework4(){
+fun module2_homework4() {
 
     var y = 5
 
@@ -89,5 +98,15 @@ fun module2_homework5() {
     var x = 1
 
     while (x <= 3) println("$x в квадрате равно ${x * x++}")
+
+}
+
+fun module3_homework1() {
+
+    val first = Bot("поддрежка", "говорить приободряющие фразы")
+    val second = Bot("убийца", "убивать кожаных мешков словами")
+
+    first.greeting()
+    second.greeting()
 
 }
