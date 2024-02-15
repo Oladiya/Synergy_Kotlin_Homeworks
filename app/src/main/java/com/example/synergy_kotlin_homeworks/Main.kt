@@ -1,7 +1,8 @@
 package com.example.synergy_kotlin_homeworks
 
-import com.example.synergy_kotlin_homeworks.module2.homework1.Bot
+import com.example.synergy_kotlin_homeworks.module3.homework1.Bot
 import java.math.RoundingMode
+import com.example.synergy_kotlin_homeworks.module3.homework2.Bot as Bot2
 
 fun main() {
 
@@ -12,6 +13,7 @@ fun main() {
         2.4,
         2.5,
         3.1,
+        3.2,
     )
 
     var lastModuleNumber: Int? = null
@@ -60,6 +62,7 @@ fun module2(homeworkNumber: Int) {
 fun module3(homeworkNumber: Int) {
     when (homeworkNumber) {
         1 -> module3_homework1()
+        2 -> module3_homework2()
     }
 }
 
@@ -108,5 +111,17 @@ fun module3_homework1() {
 
     first.greeting()
     second.greeting()
+
+}
+
+fun module3_homework2() {
+
+    val first = Bot2("поддрежка", "говорить приободряющие фразы")
+    val second = Bot2("убийца", "убивать кожаных мешков словами")
+    val new = Bot2("выдумщик", "придумывать оригинальные домашние задания")
+
+    first.greeting()
+    second.greeting()
+    new.greeting()
 
 }
