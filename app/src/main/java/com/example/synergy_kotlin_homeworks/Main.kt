@@ -1,6 +1,6 @@
 package com.example.synergy_kotlin_homeworks
 
-import com.example.synergy_kotlin_homeworks.module2.homework1.Bot
+import com.example.synergy_kotlin_homeworks.module3.homework1.Bot
 
 fun main() {
 
