@@ -1,4 +1,4 @@
-package com.example.synergy_kotlin_homeworks.module3.homework5
+package com.example.synergy_kotlin_homeworks.module3.homework6
 
 open class Bot(val name: String, val skill: String) {
 

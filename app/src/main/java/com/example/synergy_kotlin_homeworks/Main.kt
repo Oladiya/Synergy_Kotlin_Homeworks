@@ -1,7 +1,7 @@
 package com.example.synergy_kotlin_homeworks
 
 
-import com.example.synergy_kotlin_homeworks.module3.homework5.SuperBot
+import com.example.synergy_kotlin_homeworks.module3.homework6.SuperBot
 
 fun main() {
 

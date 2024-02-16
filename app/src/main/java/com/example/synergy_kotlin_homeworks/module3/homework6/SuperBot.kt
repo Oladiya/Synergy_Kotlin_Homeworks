@@ -1,4 +1,4 @@
-package com.example.synergy_kotlin_homeworks.module3.homework5
+package com.example.synergy_kotlin_homeworks.module3.homework6
 
 class SuperBot(name: String, skill: String) : Bot(name, skill) {
 
