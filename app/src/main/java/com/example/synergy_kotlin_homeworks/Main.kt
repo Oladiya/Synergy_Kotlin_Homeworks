@@ -4,7 +4,7 @@ fun main() {
 
     val names = arrayOf("Jim", "Sam", "Martin")
 
-    for (name in names){
+    for (name in names) {
         print("$name \t")
     }
 }
