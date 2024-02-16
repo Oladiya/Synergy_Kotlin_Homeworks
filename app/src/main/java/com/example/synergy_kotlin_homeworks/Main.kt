@@ -14,6 +14,7 @@ fun main() {
         2.5,
         3.1,
         3.2,
+        3.3,
     )
 
     var lastModuleNumber: Int? = null
@@ -63,6 +64,7 @@ fun module3(homeworkNumber: Int) {
     when (homeworkNumber) {
         1 -> module3_homework1()
         2 -> module3_homework2()
+        3 -> module3_homework3()
     }
 }
 
@@ -124,4 +126,14 @@ fun module3_homework2() {
     second.greeting()
     new.greeting()
 
+}
+
+fun module3_homework3() {
+
+    print("Функция first() возвращает: ${first()}")
+
+}
+
+fun first(): Int {
+    return 10 * 6
 }
