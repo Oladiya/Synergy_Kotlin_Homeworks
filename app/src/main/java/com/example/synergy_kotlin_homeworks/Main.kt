@@ -15,6 +15,7 @@ fun main() {
         3.1,
         3.2,
         3.3,
+        3.4,
     )
 
     var lastModuleNumber: Int? = null
@@ -65,6 +66,7 @@ fun module3(homeworkNumber: Int) {
         1 -> module3_homework1()
         2 -> module3_homework2()
         3 -> module3_homework3()
+        4 -> module3_homework4()
     }
 }
 
@@ -130,10 +132,20 @@ fun module3_homework2() {
 
 fun module3_homework3() {
 
-    print("Функция first() возвращает: ${first()}")
+    println("Функция first() возвращает: ${first()}")
 
 }
 
 fun first(): Int {
     return 10 * 6
+}
+
+fun module3_homework4() {
+
+    val names = arrayOf("Jim", "Sam", "Martin")
+
+    for (name in names) {
+        print("$name \t")
+    }
+    println()
 }
