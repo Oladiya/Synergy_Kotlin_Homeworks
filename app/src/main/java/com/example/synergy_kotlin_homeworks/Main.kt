@@ -4,12 +4,13 @@ import com.example.synergy_kotlin_homeworks.module3.homework1.Bot
 import com.example.synergy_kotlin_homeworks.module3.homework5.SuperBot
 import java.math.RoundingMode
 import com.example.synergy_kotlin_homeworks.module3.homework2.Bot as Bot2
+import com.example.synergy_kotlin_homeworks.module3.homework6.SuperBot as SuperBot2
 
 fun main() {
 
     val allHomeworks: Array<Double> = arrayOf(
         2.1, 2.2, 2.3, 2.4, 2.5,
-        3.1, 3.2, 3.3, 3.4, 3.5,
+        3.1, 3.2, 3.3, 3.4, 3.5, 3.6,
     )
 
     var lastModuleNumber: Int? = null
@@ -62,6 +63,7 @@ fun module3(homeworkNumber: Int) {
         3 -> module3_homework3()
         4 -> module3_homework4()
         5 -> module3_homework5()
+        6 -> module3_homework6()
     }
 }
 
@@ -148,6 +150,17 @@ fun module3_homework4() {
 fun module3_homework5() {
 
     val bot = SuperBot("интелегент", "грамотно строить предложения")
+
+    println("параметр word: " + bot.word)
+    println("параметр company: " + bot.company)
+
+    bot.greeting()
+
+}
+
+fun module3_homework6() {
+
+    val bot = SuperBot2("интелегент", "грамотно строить предложения")
 
     println("параметр word: " + bot.word)
     println("параметр company: " + bot.company)
